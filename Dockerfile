@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the jar file into the container
-COPY build/libs/SpringbootDocker-0.0.1.jar app.jar
+COPY build/libs/SwaggerAPI-0.0.1.jar app.jar
 
 # Expose port 8080 to the outside world
 EXPOSE 8080
