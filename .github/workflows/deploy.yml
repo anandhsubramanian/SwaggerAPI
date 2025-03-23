@@ -36,6 +36,11 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      # Step 6: Verify build output
+      - name: Verify build artifacts
+        run: |
+          ls build/libs
+
   # Job 2: Build and Push Docker Image
   docker:
     needs: build # Ensures this job runs after the 'build' job completes successfully
