@@ -43,7 +43,7 @@ jobs:
 
       # Step 7: Save build artifacts
       - name: Save build output
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: build-artifacts
           path: build/libs
@@ -59,7 +59,7 @@ jobs:
 
       # Step 2: Download build artifacts
       - name: Download build artifacts
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v2
         with:
           name: build-artifacts
 
