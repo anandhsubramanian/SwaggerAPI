@@ -39,7 +39,8 @@ jobs:
 
       # Step 6: Verify build artifacts
       - name: Verify build artifacts
-        run: ls build/libs
+        run: |
+          ls build/libs
 
       # Step 7: Log in to Docker Hub
       - name: Log in to Docker Hub
