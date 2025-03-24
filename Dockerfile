@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Display files in build/libs during build process
-RUN echo "Contents of build/libs:" && ls build/libs
+RUN echo "Contents of build/libs:" && ls ./build/libs
 
 # Check if the JAR file exists before copying
 ARG JAR_FILE= ./build/libs/SwaggerAPI-0.0.1.jar
