@@ -59,4 +59,4 @@ jobs:
 
       # Step 10: Run Docker container
       - name: Run application
-        run: docker run -d -p 8080:8080 SwaggerAPI
+        run: docker run -d -p 8080:8080 swaggerapi
