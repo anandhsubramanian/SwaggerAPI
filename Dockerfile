@@ -4,6 +4,9 @@ FROM openjdk:17-jdk-slim
 # Set the working directory inside the container
 WORKDIR /app
 
+# Display files in build/libs during build process
+RUN echo "Contents of build/libs:" && ls build/libs
+
 # Check if the JAR file exists before copying
 ARG JAR_FILE=build/libs/SwaggerAPI-0.0.1.jar
 RUN if [ ! -f "$JAR_FILE" ]; then echo "ERROR: $JAR_FILE not found!"; exit 1; fi
