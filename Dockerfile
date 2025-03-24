@@ -11,4 +11,4 @@ COPY ${JAR_FILE} app.jar
 # Expose port 8080 to the outside world
 EXPOSE 8080
 # Run the application
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
