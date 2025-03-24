@@ -57,6 +57,4 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/demo-app:latest
 
-      # Step 10: Run Docker container
-      - name: Run application
-        run: docker run -d -p 8080:8080 demo-app
+      
